@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Job Radar",
+  "version": "1.0.0",
+  "description": "Save any job from LinkedIn, Naukri or a careers page in one click, get a follow-up reminder after 5 days, and see which of your projects match it.",
+  "action": { "default_popup": "popup.html", "default_title": "Job Radar: save this job" },
+  "background": { "service_worker": "background.js", "type": "module" },
+  "options_page": "options.html",
+  "permissions": ["activeTab", "scripting", "storage", "alarms", "notifications"],
+  "icons": { "16": "icons/16.png", "32": "icons/32.png", "48": "icons/48.png", "128": "icons/128.png" }
+}

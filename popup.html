@@ -1,0 +1,25 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="popup.css"></head>
+<body>
+<header><img src="icons/32.png" alt=""><h1>Job Radar</h1><a id="opts" href="options.html" target="_blank" title="Edit your projects">⚙</a></header>
+
+<section id="capture">
+  <p class="hint" id="status">Reading this page…</p>
+  <form id="form" hidden>
+    <label>Role<input id="role" required></label>
+    <label>Company<input id="company" required></label>
+    <label>Location<input id="location"></label>
+    <div id="matches"></div>
+    <button type="submit" id="save">Save job</button>
+  </form>
+</section>
+
+<section>
+  <div class="bar"><h2>Tracker <span id="count"></span></h2>
+    <select id="filter"><option value="">All</option><option value="due">Follow-up due</option></select>
+    <button id="export" class="ghost" title="Download as CSV">CSV</button></div>
+  <ul id="list"></ul>
+  <p class="hint" id="empty" hidden>No jobs yet. Open a job posting and click Save.</p>
+</section>
+<script type="module" src="popup.js"></script>
+</body></html>
